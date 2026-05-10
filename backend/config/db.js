@@ -1,12 +1,12 @@
 import pkg from "pg";
-const {Pool} = pkg;
+const { Pool } = pkg;
 
 const pool = new Pool({
-        user: "postgres",
-        host: "localhost",
-        database: "creditSense",
-        password: "password",
-        port: 5432 
+  connectionString: process.env.DATABASE_URL,
+  ssl:
+    process.env.NODE_ENV === "production"
+      ? { rejectUnauthorized: false }
+      : false,
 });
 
 export default pool;
