@@ -32,7 +32,6 @@ pnpm-debug.log*
 
 # Node
 **/node_modules/
-**/dist/
 **/build/
 **/.vite/
 **/.next/
