@@ -1,0 +1,4 @@
+✔ Machine Learning credit scoring
+✔ Explainable AI
+✔ Financial insights generation
+✔ Behavioral anomaly detection

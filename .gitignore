@@ -1,0 +1,91 @@
+# =====================================================
+# CreditSense Root .gitignore
+# =====================================================
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.local
+*.key
+*.pem
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Node
+**/node_modules/
+**/dist/
+**/build/
+**/.vite/
+**/.next/
+**/.cache/
+coverage/
+.npm/
+.pnpm-store/
+.yarn/
+
+# Python
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/venv/
+**/.venv/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+
+# ML
+**/*.joblib
+**/*.pkl
+**/*.pickle
+**/*.sav
+**/*.h5
+**/*.onnx
+**/*.pt
+**/*.pth
+**/checkpoints/
+
+# Database dumps
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+*.backup
+
+# Upload/runtime
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+backend/temp/*
+!backend/temp/.gitkeep
+
+backend/output/*
+!backend/output/.gitkeep
+
+backend/eng.traineddata
+
+# temp
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
